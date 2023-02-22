@@ -1,0 +1,32 @@
+<div class="console-component">
+    <div class="header">
+        <div *ngFor="let header of headers">
+            <div class="header-container" [ngClass]="{'header-active': header.isActive}">{{header.name}}
+            </div>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th *ngFor="let header of consoleModel.columns; index as index" scope="col" class="padding-header">
+                    <div class="d-flex header-center">
+                        <div>
+                            {{header.name | uppercase}}
+                            <i class="fa-sharp fa-solid fa-sort"></i>
+                        </div>
+                        <div class="separator" [ngClass]="{'actions': headers.length === index+1}">
+                            <i class="fa-solid fa-ellipsis-vertical" *ngIf="headers.length === index+1"></i>
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of consoleModel.rowsData; index as index" [ngClass]="{'table-gray': index % 2 === 0}">
+                <td *ngFor="let header of consoleModel.columns; index as index" class="span-data"
+                    [ngClass]="{'orange': index === 0}">{{data[header.name]}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

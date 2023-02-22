@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,600&display=swap');
+
+.header {
+    background: #F1F1F1 0% 0% no-repeat padding-box;
+    display: flex;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.console-component {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004D;
+    border: 1px solid #CCCCCC;
+}
+
+.header-container {
+    font: normal normal bold 16px/22px Open Sans;
+    letter-spacing: 0px;
+    padding: 15px 30px;
+    color: #FF6537;
+}
+
+.header-active {
+    color: #707070;
+    background-color: white;
+    height: 110%;
+}
+
+.grid {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.column-name {
+    font: normal normal bold 12px/17px Open Sans;
+    letter-spacing: 0px;
+    color: #333333;
+    padding-right: 15px;
+}
+
+.separator {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #CCCCCC;
+    width: 0px;
+    height: 53px;
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+}
+
+.orange {
+    color: #FF6537;
+}
+
+.span-data {
+    font: normal normal normal 12px/17px Open Sans;
+    padding-left: 40px;
+}
+
+.header-center {
+    padding-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions {
+    margin-right: 5rem;
+}
+
+.table-gray {
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+}
+
+.padding-header{
+    padding-bottom: 0;
+}
+
+.fa-ellipsis-vertical{
+    margin-left: 2.5rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+.inp-search{
+    border: 1px solid #D2D2D2;
+    margin-bottom: 1rem;
+    width: 210px;
+}
+
+.fa-magnifying-glass{
+    color: #D2D2D2;
+    position: absolute;
+    top: 168px;
+    left: 275px;
+}
